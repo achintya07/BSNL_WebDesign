@@ -1,7 +1,10 @@
 <template>
   <div>
     <v-content>
-      It Worked!
+  <Locality/>
+      
+      <br>
+      <Alert/>
     </v-content>
   </div>
 </template>

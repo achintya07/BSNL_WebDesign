@@ -4,12 +4,14 @@
     
     <!--Header -->
     <v-app-bar color="teal" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
-
-
+      <v-toolbar-title></v-toolbar-title>
+      
 
        <!-- Component Example -->
-      <VuetifyLogo/>
+       <BSNLlogo/>
+      
+      
+        
       <Tabs/>
     </v-app-bar>
 
@@ -37,5 +39,6 @@ export default {}
 
    #inspire {
     background-color: white;
+    color: black;
   }
 </style>
