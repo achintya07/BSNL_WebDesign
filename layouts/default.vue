@@ -4,15 +4,14 @@
     
     <!--Header -->
     <v-app-bar color="teal" dark fixed app>
+   
       <v-toolbar-title></v-toolbar-title>
-      
-
+       
+       <logo/>
+       
        <!-- Component Example -->
-       <BSNLlogo/>
-      
-      
-        
-      <Tabs/>
+                    
+       <Tabs/>
     </v-app-bar>
 
     <!-- Body -->
@@ -37,8 +36,8 @@ export default {}
     border: 1px solid;
   }
 
-   #inspire {
+  /* #inspire {
     background-color: white;
     color: black;
-  }
+  }*/
 </style>

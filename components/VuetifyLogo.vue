@@ -2,8 +2,8 @@
   <img
     class="VuetifyLogo"
     alt="Vuetify Logo"
-    src="vuetify-logo.svg"
-  >
+    src="vuetify-logo.png"
+  > 
 </template>
 
 <style>

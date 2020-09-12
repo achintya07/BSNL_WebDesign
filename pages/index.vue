@@ -1,8 +1,9 @@
 <template>
   <div>
     <v-content>
+    
   <Locality/>
-      
+      <Cards/>
       <br>
       <Alert/>
     </v-content>

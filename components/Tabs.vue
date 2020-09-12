@@ -2,6 +2,7 @@
   <v-tabs
   centered="true"
   color="black"> 
+  
     <v-tab>Home</v-tab>
     <v-tab>PREPAID</v-tab>
     <v-tab>POSTPAID</v-tab>

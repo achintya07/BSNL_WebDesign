@@ -28,7 +28,7 @@
   export default {
     data () {
       return {
-        alert: true,
+        alert: false,
       }
     },
   }

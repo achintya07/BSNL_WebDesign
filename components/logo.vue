@@ -1,13 +1,13 @@
 <template>
   <img
-    class="BSNLlogo"
-    alt="HOME"
+    class="VuetifyLogo"
+    alt="Vuetify Logo"
     src="BSNLlogo.png"
-  >
+  > 
 </template>
 
 <style>
-.BSNLlogo {
+.VuetifyLogo {
   height: 50px;
   width: 50px;
 }
