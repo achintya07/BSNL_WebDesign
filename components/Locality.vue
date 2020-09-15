@@ -1,16 +1,21 @@
 <template>
-  <v-card md="6">
+  <v-card 
+  class="mx-auto"
+  centered="true"
+  width="1200px"
+  height="200px"
+  md="6">
     <v-card-title class="headline font-weight-regular blue-grey white--text">Check Locality</v-card-title>
-    <v-card-text>
-      <v-subheader class="pa-0">Enter Locality/Address</v-subheader>
+    <br><br>
       <v-autocomplete
         v-model="model"
         :hint="!isEditing ? 'Type or Click Auto Detect' : 'Click the icon to save'"
         :items="states"
-        
+       
         :label="`Enter Locality/Address `"
         persistent-hint
         prepend-icon="mdi-city"
+        
       >
         
           

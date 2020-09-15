@@ -1,11 +1,18 @@
 <template>
   <div>
+  
+  <Subtabs/>
     <v-content>
     
+     <h1> CHECK LOCALITY </h1  >
+     <br>
   <Locality/>
-      <Cards/>
+  <Availability/>
+  
+ 
+      
       <br>
-      <Alert/>
+      
     </v-content>
   </div>
 </template>
