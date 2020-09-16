@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "node-gyp": "^7.1.0",
-    "nuxt": "^2.14.5"
+    "nuxt": "^2.14.5",
+    "vue-browser-geolocation": "^1.8.0",
+    "vue-simple-alert": "^1.1.1"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
