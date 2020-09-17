@@ -8,13 +8,15 @@
       <v-row
         :align="align"
         no-gutters
-        md="4"
         style="height: 150px;"
       >
         <v-col
           v-for="n in 3"
           :key="n"
+          cols="12"
           md="4"
+        sm="4"
+        xs="4"
         >
           <v-card
             class="pa-2"
@@ -31,13 +33,16 @@
       <v-row
         no-gutters
         style="height: 150px;"
+        
       >
         <v-col
           v-for="align in alignments"
           :key="align"
           :align-self="align"
-          md="4"
-          sm="3"
+          cols="12"
+         md="4"
+        sm="4"
+        xs="4"
         >
           <v-card
             class="pa-2"
