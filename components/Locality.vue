@@ -3,9 +3,15 @@
   class="mx-auto"
   centered="true"
   width="1200px"
-  height="200px"
+  height="250px"
   md="6">
-    <v-card-title class="headline font-weight-regular blue-grey white--text">Check Locality</v-card-title>
+
+  
+  
+    <v-card-title class="headline font-weight-regular blue-grey white--text">Check Locality 
+    <v-col align="right" >
+     <v-btn> Auto Detect </v-btn></v-col> </v-card-title>
+    
     <br><br>
       <v-autocomplete
         v-model="model"

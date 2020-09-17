@@ -12,7 +12,7 @@
   </v-row>
     <br>
   <Locality/>
-  <Availability/>
+  <NotAvail/>
      
       <br>
     

@@ -8,22 +8,17 @@
     transition="scale-transition"
     outlined
     prominent     
-      type="success"
+      type="error"
     >
     <v-row >
-        <v-col class="grow"><b>Service Available</b> <br>Yay! You can register for Bharat Fiber
+        <v-col class="grow"><b>Service Not Available</b> <br>Sorry! Bharat Fiber is not available in your locality
         </v-col>   
       
       
             
       <v-col align="right">
-        <v-btn
-          color="primary"
-          dark
-          outlined
-        >
-          View Plans
-        </v-btn></v-col>
+        <Popup/>
+        </v-col>
        
       </v-row>
     </v-alert>
@@ -35,7 +30,7 @@
     data () {
       return {
         alert: false,
-        dialog: false,
+        
       }
     },
   }
