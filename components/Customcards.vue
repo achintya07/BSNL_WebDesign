@@ -31,7 +31,7 @@
       <v-btn
         icon
         @click="show = !show"
-      >
+      ><!--show triggers transitions with a condition(button click)-->
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
     </v-card-actions>

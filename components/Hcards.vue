@@ -50,7 +50,7 @@
 
         <v-col
           v-for="item in items"
-          v-for="item in items"
+          
           :key="i"
           cols="12"
         >
@@ -72,7 +72,7 @@
                 class="ma-3"
                 size="125"
                 tile
-              >
+              ><!--Tile removes the border-radius-->
                 <v-img :src="item.src"></v-img>
               </v-avatar>
             </div>

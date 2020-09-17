@@ -10,10 +10,22 @@
     prominent     
       type="success"
     >
-    
+    <v-row >
+        <v-col class="grow"><b>Service Available</b> <br>Yay! You can register for Bharat Fiber
+        </v-col>   
       
       
+            
       
+        <v-btn
+          color="primary"
+          dark
+          outlined
+        >
+          View Plans
+        </v-btn>
+       
+      </v-row>
     </v-alert>
     </div>
     </template>

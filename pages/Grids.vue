@@ -3,7 +3,8 @@
   
 
     <v-content>
-    <Loadingcard/>
+    <Hcards/>
+    
      
     
     </v-content>

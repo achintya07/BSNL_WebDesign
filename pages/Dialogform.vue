@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-dialog v-model="dialog" persistent max-width="600px">
+    <v-dialog v-model="dialog" persistent max-width="600px"> <!--Model creates a two-way binding, i.e. continuous updates-->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"

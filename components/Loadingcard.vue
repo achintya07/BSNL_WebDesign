@@ -1,7 +1,8 @@
 <template>
+<!-- mx auto to add spacing-->
   <v-card
     :loading="loading"
-    class="mx-auto my-12"
+    class="mx-auto my-12" 
     max-width="374"
   >
     <v-img
@@ -40,6 +41,7 @@
     <v-card-title>Tonight's availability</v-card-title>
 
     <v-card-text>
+    <!-- chips used to convey small pieces of information-->
       <v-chip-group
         v-model="selection"
         active-class="deep-purple accent-4 white--text"

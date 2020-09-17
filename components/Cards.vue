@@ -103,12 +103,12 @@
     </v-toolbar>
 
     <v-container fluid>
-      <v-row dense>
+      <v-row dense><!--Reduces the gutter between cols-->
         <v-col
           v-for="card in cards"
           :key="card.title"
           :cols="card.flex"
-        >
+        ><!-- place cards in order using key-->
           <v-card>
             <v-img
               :src="card.src"

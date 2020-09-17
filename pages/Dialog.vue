@@ -10,7 +10,7 @@
           dark
           v-bind="attrs"
           v-on="on"
-        >
+        ><!--v-on prevents multiple lines of code by copying properties of another component-->
           Click Me
         </v-btn>
       </template>
