@@ -1,9 +1,13 @@
 <template>
-  <v-card>
+  <v-card flat>
     <v-tabs
       v-model="tab"
-      background-color="primary"
-      dark
+      light
+   background-color="white"
+    color="blue"
+    md="4"
+    sm="2"
+    xs="2"
     >
       <v-tab
         v-for="item in items"
@@ -19,7 +23,11 @@
         :key="item.tab"
       >
         <v-card flat>
-          <v-card-text>{{ item.content }}</v-card-text>
+        
+  <v-btn text> Why Bharat Fiber? </v-btn>
+  <v-btn text> Check Locality </v-btn>
+  <v-btn text> View Plans </v-btn>
+ 
         </v-card>
       </v-tab-item>
     </v-tabs-items>
@@ -32,10 +40,16 @@
       return {
         tab: null,
         items: [
-          { tab: '</Sub>', content: <Sub/> },
+          { tab: 'One', content: 'Tab 1 Content' },
           { tab: 'Two', content: 'Tab 2 Content' },
           { tab: 'Three', content: 'Tab 3 Content' },
-          
+          { tab: 'Four', content: 'Tab 4 Content' },
+          { tab: 'Five', content: 'Tab 5 Content' },
+          { tab: 'Six', content: 'Tab 6 Content' },
+          { tab: 'Seven', content: 'Tab 7 Content' },
+          { tab: 'Eight', content: 'Tab 8 Content' },
+          { tab: 'Nine', content: 'Tab 9 Content' },
+          { tab: 'Ten', content: 'Tab 10 Content' },
         ],
       }
     },

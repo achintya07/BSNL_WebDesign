@@ -3,7 +3,10 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="white" light fixed app>
+    <v-app-bar color="white" light 
+    md="4"
+    sm="4"
+    xs="2">
    
       <v-toolbar-title></v-toolbar-title>
        
@@ -22,7 +25,9 @@
     
     <!-- Footer -->
     <v-footer color="indigo" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+    
+      <span class="white--text">&copy; {{ new Date().getFullYear() }} </span>
+      <Footer/>
     </v-footer>
 
   </v-app>

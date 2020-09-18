@@ -1,7 +1,6 @@
 <template>
   <div>
   
-  <Sub/>
   <Breadcrumb/>
     <v-content>
     
@@ -12,7 +11,7 @@
   </v-row>
     <br>
   <Locality/>
-  <Availability/>
+  
      
       <br>
     

@@ -1,18 +1,21 @@
 <template>
   <v-tabs
   background-color="white"
-    color="blue"> 
+    color="blue"
+    md="4"
+    sm="2"
+    xs="2"> 
   
-    <v-tab>Home</v-tab>
-    <v-tab>PREPAID</v-tab>
-    <v-tab>POSTPAID</v-tab>
+    <v-tab >Home</v-tab>
+    <v-tab >PREPAID</v-tab>
+    <v-tab> POSTPAID</v-tab>
     <v-tab>FIBER & WIFI</v-tab>
     <v-tab>CUSTOMIZE NUMBER</v-tab>
 
 <v-spacer></v-spacer>
-<v-col  md="2" >
-
-
+<v-col  md="2"
+sm="2"
+xs="2" >
 
           <v-text-field centered="false"
             hide-details 
