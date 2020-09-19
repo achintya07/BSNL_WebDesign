@@ -13,17 +13,17 @@
     data: () => ({
       items: [
         {
-          text: 'Dashboard',
+          text: 'Home',
           disabled: false,
-          href: 'breadcrumbs_dashboard',
+          href: 'Default',
         },
         {
-          text: 'Link 1',
+          text: 'Fiber & WiFi',
           disabled: false,
           href: 'breadcrumbs_link_1',
         },
         {
-          text: 'Link 2',
+          text: 'Check Locality',
           disabled: true,
           href: 'breadcrumbs_link_2',
         },

@@ -31,6 +31,7 @@
                  
          
       </v-autocomplete></v-col>
+      
       <Availability/>
      
       </v-row> 

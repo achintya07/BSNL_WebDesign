@@ -3,20 +3,21 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="white" light 
+    <v-card color="white" light tile="true"
     md="4"
     sm="4"
     xs="2">
    
-      <v-toolbar-title></v-toolbar-title>
-       
-       <logo/>
+      <v-row align="center" class="mx-auto">   
+      <v-col md="1" >    
+       <logo/></v-col>
        
        
        <!-- Component Example -->
-                    
-       <Tabs/>
-    </v-app-bar>
+                  
+       <Main/> <v-spacer></v-spacer>
+       <v-col  md="2" align="right" ><Search/> </v-col> </v-row>
+    </v-card>
 
     <!-- Body -->
     <v-content light>
@@ -24,7 +25,7 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="indigo" app>
+    <v-footer color="blue" app>
     
       <span class="white--text">&copy; {{ new Date().getFullYear() }} </span>
       <Footer/>

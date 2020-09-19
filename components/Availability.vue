@@ -1,11 +1,12 @@
 <template>
   <div>
+  <v-col align="right">
       <v-btn
         color="primary" text
         @click="alert = !alert"
       ><v-icon>mdi-magnify</v-icon>
         
-      </v-btn>
+      </v-btn></v-col>
  
  
     <v-alert

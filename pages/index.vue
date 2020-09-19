@@ -1,9 +1,7 @@
 <template>
   <div>
-  
-  <Breadcrumb/>
-    <v-content>
-    
+    <Breadcrumb/>
+    <v-content>    
     <v-row align="start">
      <v-col  offset-md="1">
   <h1> CHECK LOCALITY </h1>
@@ -11,10 +9,12 @@
   </v-row>
     <br>
   <Locality/>
-  
-     
       <br>
-    
+      <br>
+      <br>   
+      <br>
+      <br>
+      <br>    
     </v-content>
   </div>
 </template>

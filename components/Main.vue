@@ -9,7 +9,7 @@
     sm="2"
     xs="2"
     >
-      <v-tab
+      <v-tab 
         v-for="item in items"
         :key="item.tab"
       >
@@ -18,19 +18,24 @@
     </v-tabs>
 
     <v-tabs-items v-model="tab">
-      <v-tab-item
+      <v-tab-item 
         v-for="item in items"
         :key="item.tab"
       >
-        <v-card flat>
+        <v-card  light flat>
         
-  <v-btn text> Why Bharat Fiber? </v-btn>
-  <v-btn text> Check Locality </v-btn>
-  <v-btn text> View Plans </v-btn>
+  <v-btn text>{{item.button}} </v-btn>
+  <v-btn text>{{item.button1}} </v-btn>
+  <v-btn text>{{item.button2}} </v-btn>
+        
+  <v-btn text>{{item.button3}} </v-btn> 
+  <v-btn text>{{item.button4}} </v-btn>
+  <v-btn text>{{item.button5}} </v-btn>
  
         </v-card>
       </v-tab-item>
     </v-tabs-items>
+    
   </v-card>
 </template>
 
@@ -38,18 +43,14 @@
   export default {
     data () {
       return {
-        tab: null,
+        tab: null
+        ,
         items: [
-          { tab: 'One', content: 'Tab 1 Content' },
-          { tab: 'Two', content: 'Tab 2 Content' },
-          { tab: 'Three', content: 'Tab 3 Content' },
-          { tab: 'Four', content: 'Tab 4 Content' },
-          { tab: 'Five', content: 'Tab 5 Content' },
-          { tab: 'Six', content: 'Tab 6 Content' },
-          { tab: 'Seven', content: 'Tab 7 Content' },
-          { tab: 'Eight', content: 'Tab 8 Content' },
-          { tab: 'Nine', content: 'Tab 9 Content' },
-          { tab: 'Ten', content: 'Tab 10 Content' },
+          { tab: 'PREPAID', button: 'Recharge', button1:'Prepaid to Postpaid',button2:'Roaming',button3: 'International Roaming', button4:'Upgrade',button5:'View Plans ' },
+          { tab: 'POSTPAID', button: 'Pay Bills', button1:'Roaming',button2:'International Roaming', button3: 'View Plans' },
+          { tab: 'FIBER & WIFI', button: 'Why Bharat Fiber?', button1:'Check Locality',button2:'View Plans' },
+          { tab: 'CUSTOMIZE NUMBER', button: 'Vanity Numbers?', button1:'Fancy Numbers',button2:'Choose your Mobile Number'},
+          
         ],
       }
     },
