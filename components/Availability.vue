@@ -1,14 +1,14 @@
 <template>
-  <div>
+  <div><v-row>
   <v-col align="right">
       <v-btn
         color="primary" text
-        @click="alert = !alert"
+       
       ><v-icon>mdi-magnify</v-icon>
         
-      </v-btn></v-col>
+      </v-btn></v-col></v-row>
  
- 
+ <v-row>
     <v-alert
     :value="alert"
       class="mx-auto"
@@ -36,6 +36,7 @@
        
       </v-row>
     </v-alert>
+    </v-row>
  </div>
 </template>
     <script>
@@ -43,7 +44,7 @@
   export default {
     data () {
       return {
-        alert: false,
+        alert: true,
         
       }
     },

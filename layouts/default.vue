@@ -43,8 +43,8 @@ export default {}
     border: 1px solid;
   }
 
-  /* #inspire {
+   #inspire {
     background-color: white;
     color: black;
-  }*/
+  }
 </style>

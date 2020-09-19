@@ -22,7 +22,7 @@
         v-for="item in items"
         :key="item.tab"
       >
-        <v-card  light flat>
+        <v-card  light flat tile>
         
   <v-btn text>{{item.button}} </v-btn>
   <v-btn text>{{item.button1}} </v-btn>
