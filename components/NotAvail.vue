@@ -1,6 +1,6 @@
 <template>
   <div> 
-      
+      <!--alert to show service is not available-->
     <v-alert
       class="mx-auto"
       width="1200px"

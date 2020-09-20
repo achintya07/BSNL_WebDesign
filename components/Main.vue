@@ -1,6 +1,6 @@
 <template>
   <div>
-  
+    <!--main tabs-->
     <v-tabs
       v-model="tab"
       light
@@ -10,6 +10,7 @@
       sm="2"
       xs="2"
       >
+        <!--for loop used so that there are multiple tabs and information in each tab is different-->
         <v-tab 
           v-for="item in items"
           :key="item.tab"
@@ -20,14 +21,14 @@
 
 
     <v-tabs-items v-model="tab">
-        <v-tab-item 
+      <v-tab-item 
         v-for="item in items"
         :key="item.tab"
-      >
+        >
 
         <v-row>
           <v-app-bar width="1920" dense  color="blue darken-3"  flat tile>
-        
+            <!--subtabs in form of buttons-->
             <v-btn text>{{item.button}} </v-btn>
             <v-btn text>{{item.button1}} </v-btn>
             <v-btn text>{{item.button2}} </v-btn>

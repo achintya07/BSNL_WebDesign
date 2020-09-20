@@ -1,6 +1,7 @@
 <template>
+  <!--component to show service is not available-->
   <div id="app">
-
+    <!--card in which auto detect button and autocomplete text field is placed-->
     <v-card 
     class="mx-auto"
     
@@ -51,9 +52,10 @@
        
     
     </v-card>
+    <!--if condition to show availablity alert when seach/magnify button clicked-->
     <NotAvail 
         v-if="showNotAvail"/>
-      
+  <!--need to add if condition to the locality data so that correct availability status is showed -->     
  </div>
 </template>
 

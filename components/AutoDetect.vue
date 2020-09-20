@@ -1,6 +1,6 @@
 <template>
    <div>
-	<p>Lat = {{lat}} Lon ={{lon}}</p>
+	<p>Lat = {{lat}} Lon ={{lon}}</p> <!--displays longitude and latitude, need to convert this data to a location-->
 	<p>{{error}}</p>
 	<v-btn color="primary" @click="myFunction()">Auto Detect</v-btn>
 </div>

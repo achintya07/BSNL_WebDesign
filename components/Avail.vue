@@ -2,6 +2,7 @@
   <div>
  
     <v-row>
+      <!--alert to show service is available-->
       <v-alert
         :value="alert"
         class="mx-auto"
@@ -12,13 +13,11 @@
         outlined
         prominent     
         type="success"
-      >
-        <v-row>
-          <v-col class="grow"><strong style="color:Green">Service Available</strong> <p style="color:Green"> Yay! You can register for Bharat Fiber</p>
-          </v-col>   
-        
-        
-              
+      > <v-row>
+          <v-col class="grow"><strong style="color:Green">Service Available</strong>
+           <p style="color:Green"> Yay! You can register for Bharat Fiber</p> <!--green colour changed so that font readable-->
+          </v-col>          
+                     
           <v-col align="right">
           <v-btn
             color="primary"

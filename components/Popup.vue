@@ -1,4 +1,5 @@
 <template>
+  <!--popup form to receive updates-->
   <v-row justify="end">
     <v-dialog light v-model="dialog"  max-width="600px">
       <template v-slot:activator="{ on, attrs }">
@@ -21,6 +22,7 @@
           <v-container>
             <v-row>
               <v-col cols="12" sm="6" md="12">
+              <!--required used so that for text fields which are neccessary to fill, denoted with a star-->
                 <v-text-field label="Name*" required></v-text-field>
               </v-col>
               
