@@ -2,71 +2,74 @@
   <div id="app">
 
     <v-card 
-      light
-      class="mx-auto"
-      centered="true"
-      width="1200px"
-      height="220px"
-      md="6"
-      sm="4"
-      xs="4">
+    class="mx-auto"
+    
+    centered="true"
+    width="1200px"
+    height="220px"
+    light
+    
+    md="6"
+    sm="4"
+    xs="4">
 
     
     
-      <v-card-title class="headline font-weight-medium white blue--text">Enter Locality 
-        <v-col align="right">
-
-          <AutoDetect/>
-        </v-col>
-      </v-card-title>
-      
+    <v-card-title class="headline font-weight-medium white blue--text">Enter Locality  
+      <v-col align="right">
+        <AutoDetect/>
+      </v-col>
+    </v-card-title>     
       
       <v-row align="center" justify="start">
         <v-col md="11">
           <v-autocomplete
             v-model="model"
             dense
-            :items="Available"
+            :items="NotAvailable"
             
-            :label="`Type address or AutoDetect`"
+            :label="`Type address or AutoDetect `"
             persistent-hint
             prepend-icon="mdi-city"
             >     
             
           
           </v-autocomplete>
-        </v-col>
+        </v-col> 
         <v-col align="right">
           <v-btn
         
             color="primary" text
-            @click="toggleAvail"
-            ><v-icon>mdi-magnify</v-icon>            
-          </v-btn>              
-        </v-col>                     
-      </v-row> 
-                
+            @click="toggleNotAvail"
+            ><v-icon>mdi-magnify</v-icon>
+            
+          </v-btn>      
       
-    </v-card>
-    <Avail 
-        v-if="showAvail"/>
+        </v-col>     
+             
+      </v-row> 
+       
     
+    </v-card>
+    <NotAvail 
+        v-if="showNotAvail"/>
+      
  </div>
 </template>
 
 <script>
-import Avail from './Avail.vue'
+import NotAvail from './NotAvail.vue'
   export default {
     name: "App",
     components: {
-      Avail
+      NotAvail
       },
     data () {
       return {
         isEditing: false,
         model: null,
-        showAvail: false,
-        Available:[ 
+        showNotAvail: false,
+        NotAvailable:[ 
           'Telebhawan,Amravati', 'Savediexch,Amravati', 'MIDC,Amravati', 'Akoli,Amravati',
           'Badnera,Amravati', 'Navsari,Amravati', 'MainExchange,Amravati', 'RLUCAMP,Amravati',
           'Waluj,Amravati', 'Gharkheda,Amravati', 'Chikalthana,Amravati',
@@ -78,13 +81,14 @@ import Avail from './Avail.vue'
           'Kagal,Kohlapur', 'Laxmipuri,Kohlapur', 'Tarabahi park,Kohlapur ', 'Shirouli,Kohlapur',
           'Jaysingpoor,Kohlapur', 'Dombivali,Kalyan', 'Ulhasnagar,Kalyan', 'Ambarnath,Kalyan',
           'Tarapur,Kalyan', 'Dombivali midc,Kalyan ', 'Khadakapda,Kalyan', 'Bhiwanadi,Kalyan', 'Saravali,Kalyan',
+          
         ],
       }
     },
     methods: {
-      toggleAvail(){
+      toggleNotAvail(){
         
-        this.showAvail = !this.showAvail;
+        this.showNotAvail = !this.showNotAvail;
        
       },
      }

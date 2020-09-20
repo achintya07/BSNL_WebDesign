@@ -2,14 +2,16 @@
    <div>
 	<p>Lat = {{lat}} Lon ={{lon}}</p>
 	<p>{{error}}</p>
-	<v-btn @click="myFunction()">Click Me</v-btn>
+	<v-btn color="primary" @click="myFunction()">Auto Detect</v-btn>
 </div>
 </template>
 <script>
    export default {
-     data() {
+     data() { 
        return {
-         address: "",
+         lat:0,
+         lon:0,
+         
        };
      },
      methods: {

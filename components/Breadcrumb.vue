@@ -1,6 +1,6 @@
 <template>
   <div>
-        <v-breadcrumbs :items="items">
+    <v-breadcrumbs light :items="items">
       <template v-slot:divider>
         <v-icon>mdi-chevron-right</v-icon>
       </template>
@@ -18,15 +18,16 @@
           href: 'Default',
         },
         {
-          text: 'Fiber & WiFi',
+          text: 'Why Bharat Fiber?',
           disabled: false,
-          href: 'breadcrumbs_link_1',
+          href: 'Default',
         },
         {
           text: 'Check Locality',
           disabled: true,
-          href: 'breadcrumbs_link_2',
+          href: 'breadcrumbs_link_1',
         },
+        
       ],
     }),
   }
