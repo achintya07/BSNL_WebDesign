@@ -27,6 +27,7 @@
         >
 
         <v-row>
+        
           <v-app-bar width="1920" dense  color="blue darken-3"  flat tile>
             <!--subtabs in form of buttons-->
             <v-btn text>{{item.button}} </v-btn>

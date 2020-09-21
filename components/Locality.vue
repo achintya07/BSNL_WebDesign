@@ -2,6 +2,7 @@
   <!--component to show service is not available-->
   <div id="app">
     <!--card in which auto detect button and autocomplete text field is placed-->
+    <v-flex  md="6" xs="12" sm="6" offset-sm="3">
     <v-card 
       light
       class="mx-auto"
@@ -49,6 +50,7 @@
                 
       
     </v-card>
+    </v-flex>
     <!--if condition to show availablity alert when seach/magnify button clicked-->
     <Avail 
         v-if="showAvail"/>

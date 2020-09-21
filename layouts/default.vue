@@ -15,7 +15,7 @@
        
        
                   
-       <Main/> <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
        </v-row>
     </v-card>
 
