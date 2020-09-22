@@ -13,7 +13,7 @@
        <logo/></v-col> <v-col offset="6" md="2" align="right" ><Search/></v-col> <v-col><Chips/> </v-col>
        
        
-                 
+      <Main/>          
       <v-spacer></v-spacer>
        </v-row>
     </v-card>
