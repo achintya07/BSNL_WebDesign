@@ -19,7 +19,7 @@
         xs="4"
         >
           <v-card
-            class="pa-2"
+            class="pa-2 mx-md-2 mx-sm-2 mx-xs-2 pa-3"
             outlined
             tile
           >
@@ -29,7 +29,7 @@
       </v-row>
     </v-container>
 
-    <v-container class="grey lighten-5">
+    <v-container class="grey lighten-5 mx-md-2 mx-sm-2 mx-xs-2 pa-3">
       <v-row
         no-gutters
         style="height: 150px;"
