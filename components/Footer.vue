@@ -1,7 +1,7 @@
 <template>
 
   <v-row>
-    <v-col align="center"   cols="12" md="12">
+    <v-col align="center" md="12" sm="6" xs="6">
 
       <v-btn text> Home </v-btn>
       <v-btn text> Sitemap </v-btn>

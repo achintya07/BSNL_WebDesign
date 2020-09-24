@@ -3,28 +3,32 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-card dense color="white" light tile="true"
-    md="4"
-    sm="4"
-    xs="2">
    
-      <v-row dense align="center" class="mx-auto">   
-      <v-col>    
-       <logo/></v-col> <v-col offset="6" md="2" align="right" ><Search/></v-col> <v-col><Chips/> </v-col>
+    
+     
+    
+    <v-card dense color="white" light tile> 
+         
+          <v-row dense align="center" class="mx-4">  
+         
+       <logo/> <v-col md="8" sm="6" xs="6" class="mx-4"> <Main/> </v-col>  <v-col class="mx-4" align="right" ><Search/></v-col> <v-col> <Chips/> </v-col>
        
        
-      <Main/>          
+              
       <v-spacer></v-spacer>
        </v-row>
     </v-card>
+    </v-col>
 
     <!-- Body -->
     
     <v-content light>
+   
       <nuxt /> 
     </v-content>
     
     <!-- Footer -->
+    
     <v-footer color="blue darken-3" app>
     
       
@@ -39,6 +43,9 @@ export default {}
 </script>
 
 <style> 
+@media (max-width: 960px){
+
+}
   .white--text {
     border: 1px solid;
   }

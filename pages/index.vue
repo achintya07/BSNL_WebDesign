@@ -1,23 +1,25 @@
 <template>
   <div>
-  <Subtab/>
+  <sub/>
     <Breadcrumb/>
     <v-content>    
-    <v-row align="start">
-     <v-col  offset-md="1">
-        <h1> CHECK LOCALITY </h1>
-      </v-col>
-   </v-row>
+    
+    <v-container>
+        <h1 class="bruh"> CHECK LOCALITY </h1>
+    
+   </v-container>
     <br>
     <Locality/>
-      <br>
-      <br>
-      <br>   
-      <br>
-      <br>
-      <br>    
+       
     </v-content>
   </div>
 </template>
+<style>
 
+@media (max-width: 601px) {
+  .bruh {
+    font-size: 24px;
+  }
+}
+</style>
 

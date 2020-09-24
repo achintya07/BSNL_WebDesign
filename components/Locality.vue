@@ -2,26 +2,31 @@
   <!--component to show service is not available-->
   <div id="app">
     <!--card in which auto detect button and autocomplete text field is placed-->
-    <v-flex  md="6" xs="12" sm="6" offset-sm="3">
+    
+    <v-container>
+    
     <v-card 
       light
       class="mx-auto"
       centered="true"
       width="1200px"
       height="220px"
-      md="6"
-      sm="4"
-      xs="4">
+     >
 
     
-    
-      <v-card-title class="headline font-weight-medium white blue--text">Enter Locality 
-        <v-col align="right">
+    <v-row>
+    <v-col  md="8" sm="8" xs="8">
+      <v-card-title class="headline font-size-18 font-weight-medium white blue--text mx-4">Enter Locality </v-card-title></v-col>
+      
+        <v-col align="right" md="4" sm="4" xs="2">
 
           <AutoDetect/>
         </v-col>
-      </v-card-title>
       
+      </v-row>
+     
+
+    
       
       <v-row align="center" justify="start">
         <v-col md="11">
@@ -42,34 +47,38 @@
           <v-btn
         
             color="primary" text
-            @click="toggleAvail"
+            @click="toggleAvail " 
             ><v-icon>mdi-magnify</v-icon>            
           </v-btn>              
         </v-col>                     
       </v-row> 
                 
-      
+     
     </v-card>
-    </v-flex>
+  </v-container> 
     <!--if condition to show availablity alert when seach/magnify button clicked-->
     <Avail 
         v-if="showAvail"/>
+  
     <!--need to add if condition to the locality data so that correct availability status is showed -->  
  </div>
 </template>
 
 <script>
 import Avail from './Avail.vue'
+
   export default {
     name: "App",
     components: {
-      Avail
+      Avail,
+    
       },
     data () {
       return {
         isEditing: false,
         model: null,
         showAvail: false,
+        showNotAvail: false,
         Available:[ 
           'Telebhawan,Amravati', 'Savediexch,Amravati', 'MIDC,Amravati', 'Akoli,Amravati',
           'Badnera,Amravati', 'Navsari,Amravati', 'MainExchange,Amravati', 'RLUCAMP,Amravati',
@@ -89,8 +98,9 @@ import Avail from './Avail.vue'
       toggleAvail(){
         
         this.showAvail = !this.showAvail;
-       
+        
       },
+      
      }
   }
 </script>

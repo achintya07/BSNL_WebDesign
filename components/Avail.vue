@@ -6,7 +6,7 @@
       <v-alert
         :value="alert"
         class="mx-auto"
-        width="1200px"
+        width="1160px"
         transition="scale-transition"
         dense
         light

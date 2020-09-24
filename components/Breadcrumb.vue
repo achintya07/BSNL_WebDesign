@@ -1,10 +1,12 @@
 <template>
   <div>
+  <v-col cols="8" md="6" sm="2" xs="2">
     <v-breadcrumbs light :items="items">
       <template v-slot:divider>
         <v-icon>mdi-chevron-right</v-icon>
       </template>
     </v-breadcrumbs>
+    </v-col>
   </div>
 </template>
 
