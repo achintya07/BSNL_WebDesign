@@ -1,6 +1,6 @@
 <template>
   <div>
-  <v-col cols="8" md="6" sm="2" xs="2">
+  <v-col cols="12" md="12" sm="12" >
     <v-breadcrumbs light :items="items">
       <template v-slot:divider>
         <v-icon>mdi-chevron-right</v-icon>

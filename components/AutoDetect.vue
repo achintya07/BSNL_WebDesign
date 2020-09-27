@@ -1,9 +1,14 @@
 <template>
-   <div>
-	<p class="mx-3">Lat = {{lat}} Lon ={{lon}}</p> <!--displays longitude and latitude, need to convert this data to a location-->
-	<p>{{error}}</p>
-	<v-btn class="mx-3 " color="primary" @click="myFunction()">Auto Detect</v-btn>
-</div>
+  <div>
+    <v-row justify="end">
+      <p class="mr-4">Lat = {{lat}} Lon ={{lon}}</p> <!--displays longitude and latitude, need to convert this data to a location-->
+      <p>{{error}}</p>
+    </v-row>
+    <v-row justify="end">
+      <v-btn class="mr-4" color="primary" @click="myFunction()">Auto Detect 
+      </v-btn> 
+    </v-row>
+  </div>
 </template>
 <script>
    export default {

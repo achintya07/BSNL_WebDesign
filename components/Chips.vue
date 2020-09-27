@@ -6,7 +6,7 @@
       class="ma-2"
       color="white"
       text-color="#015FAF"
-    >
+      >
       CORPORATE
     </v-chip>
       <v-chip
@@ -14,15 +14,15 @@
       class="ma-2"
       color="white"
       text-color="#015FAF"
-    >
-      CORPORATE
+      >
+      REGISTER
     </v-chip>
     <v-chip
       x-small
       class="ma-2"
       color="white"
       text-color="#015FAF"
-    >
+      >
       CAREER
     </v-chip>
     <v-chip
@@ -30,7 +30,7 @@
       class="ma-2"
       color="white"
       text-color="#015FAF"
-    >
+      >
       LOGIN
     </v-chip>
   </div>

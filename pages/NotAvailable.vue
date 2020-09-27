@@ -1,23 +1,26 @@
 <template>
   <div>
-  <Subtab/>
+
+<v-row>
     <Breadcrumb/>
-    <v-content>    
-    <v-row align="start">
-     <v-col  offset-md="1">
-        <h1> CHECK LOCALITY </h1>
-      </v-col>
     </v-row>
-    <br>
-  <Locality2/>
-      <br>
-      <br>
-      <br>   
-      <br>
-      <br>
-      <br>    
+    <v-content>    
+    
+    <v-container>
+    <h1 class="heading"> CHECK LOCALITY </h1>
+    
+   </v-container>
+    <Locality2/>
+       
     </v-content>
   </div>
 </template>
-
+<style>
+/* Condition added which reduces the font size of h1 when screen size is lesser than 600px */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 24px;
+  }
+}
+</style>
 

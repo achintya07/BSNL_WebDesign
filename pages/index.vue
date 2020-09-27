@@ -1,23 +1,25 @@
 <template>
   <div>
-  <sub/>
+
+<tab/>
+<v-row>
     <Breadcrumb/>
+    </v-row>
     <v-content>    
     
     <v-container>
-        <h1 class="bruh"> CHECK LOCALITY </h1>
+    <h1 class="heading"> CHECK LOCALITY </h1>
     
    </v-container>
-    <br>
     <Locality/>
        
     </v-content>
   </div>
 </template>
 <style>
-
-@media (max-width: 601px) {
-  .bruh {
+/* Condition added which reduces the font size of h1 when screen size is lesser than 600px */
+@media (max-width: 600px) {
+  .heading {
     font-size: 24px;
   }
 }

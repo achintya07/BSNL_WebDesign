@@ -1,19 +1,18 @@
 <template>
   <div>
     <!--main tabs-->
+    <v-row dense>
     <v-tabs
       v-model="tab"
       light
       background-color="white"
       color="blue darken-3"
-      class="d-none d-md-flex d-lg-flex"
-      md="4"
-      sm="2"
-      xs="2"
+      class=" mb-2 ml-md-5 d-none d-sm-flex"
+     
       >
         <!--for loop used so that there are multiple tabs and information in each tab is different-->
         <v-tab 
-        class="d-none d-md-flex d-lg-flex"
+        class="d-none d-sm-flex"
           v-for="item in items"
           :key="item.tab"
           >
@@ -22,18 +21,20 @@
     </v-tabs>
 
 
-    <v-tabs-items class="d-none d-md-flex d-lg-flex" v-model="tab">
+    <v-tabs-items light class="d-none d-sm-flex" v-model="tab">
       <v-tab-item 
      
         v-for="item in items"
         :key="item.tab"
         >
 
-        <v-row>
-        
-          <v-app-bar width="1920" dense  color="blue darken-3"  flat tile>
+        <v-row dense>
+        <v-col cols="12" md="12" sm="12">
+          <v-card dense  class="mx-1" color="blue"  flat tile>
             <!--subtabs in form of buttons-->
-            <v-btn  text>{{item.button}} </v-btn>
+         
+             
+            <v-btn  text>{{item.button}}  </v-btn>
             <v-btn  text>{{item.button1}} </v-btn>
             <v-btn  text>{{item.button2}} </v-btn>
                   
@@ -41,12 +42,14 @@
             <v-btn  text>{{item.button4}} </v-btn>
             <v-btn  text>{{item.button5}} </v-btn>
             
- 
-          </v-app-bar> 
-        </v-row>
+           
+              
+          </v-card> 
+          </v-col>
+       </v-row>
       </v-tab-item>
     </v-tabs-items>
-   
+   </v-row>
   </div>
 </template>
 

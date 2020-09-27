@@ -1,7 +1,7 @@
 <template>
   <div>
  
-    <v-row>
+    <v-row align="center">
       <!--alert to show service is available-->
       <v-alert
         :value="alert"
@@ -13,19 +13,20 @@
         outlined
         prominent     
         type="success"
-      > <v-row>
-          <v-col class="grow"><strong style="color:Green">Service Available</strong>
+        > 
+        <v-row align="center">
+          <v-col class="grow"> <strong style="color:Green">Service Available</strong>
            <p style="color:Green"> Yay! You can register for Bharat Fiber</p> <!--green colour changed so that font readable-->
           </v-col>          
                      
           <v-col align="right">
-          <v-btn
-            color="primary"
-            light
-            outlined
-          >
-            View Plans
-          </v-btn>
+            <v-btn
+              color="primary"
+              light
+              outlined
+              >
+              View Plans
+            </v-btn>
           </v-col>
         
         </v-row>
