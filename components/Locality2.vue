@@ -55,9 +55,9 @@
       </v-card>
     </v-container>
     <v-row justify="center">
-      <v-col cols="12" md="10" sm="10">
+      <v-col cols="11" md="10" sm="10">
           <!--if condition to show availablity alert when seach/magnify button clicked-->
-        <NotAvail 
+        <NotAvail class="mx-1" 
         v-if="showNotAvail"/>
       </v-col>
     </v-row>

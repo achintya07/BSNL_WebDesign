@@ -58,11 +58,11 @@
       </v-card>
   
     </v-container> 
-  
+    
     <v-row justify="center"> <!--justify is set to center so that Avail component is always on the center of the screen-->
-      <v-col cols="12" md="10" sm="10">
+      <v-col  cols="11" md="10" sm="10">
       <!--if condition to show availablity alert when seach/magnify button clicked-->
-        <Avail 
+        <Avail class="mx-1"
             v-if="showAvail"/>
       </v-col>
     </v-row>

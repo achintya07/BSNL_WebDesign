@@ -15,17 +15,21 @@
         <v-col offset="5" offset-md="0" offset-sm="0" md="1" cols="1"> 
           <logo/> 
         </v-col> 
+
         <v-spacer></v-spacer> <!--adds space between two components within a row and between columns-->
+
         <v-col  md="2" sm="3" cols="4" class="ml-10 mt-4">
           <Search/>
         </v-col>
-        <v-col class="mr-5 mt-4" md="2" sm="2" cols="12">
+        
+        <v-col class="mr-1 mt-4" md="2" sm="2" cols="12">
           <Chips/> 
         </v-col>
       </v-row>
       
       <v-row dense>
-        <v-col md="12" sm="12"> <tabs/> 
+        <v-col md="12" sm="12"> 
+         <tabs/> 
         </v-col> 
       </v-row>
      
