@@ -1,17 +1,17 @@
 <template>
   <div>
-
-<v-row>
-    <Breadcrumb/>
+    <tab/>
+    <v-row>
+      <Breadcrumb/>
     </v-row>
     <v-content>    
-    
-    <v-container>
-    <h1 class="heading"> CHECK LOCALITY </h1>
-    
-   </v-container>
-    <Locality2/>
-       
+      
+      <v-container>
+        <h1 class="heading"> CHECK LOCALITY </h1>
+        
+      </v-container>
+      <Locality2/>
+        
     </v-content>
   </div>
 </template>
