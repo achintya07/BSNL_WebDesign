@@ -7,15 +7,17 @@
         :value="alert"
         class="mx-auto"
         width="1160px"
-        transition="scale-transition"
         dense
         light
         outlined
         prominent     
         type="success"
         > 
+        <!--prominent attribute displays a larger icon-->
+        <!--type attribute enables to show a type of alert since there are predefined alerts--> 
         <v-row align="center">
-          <v-col class="grow"> <strong style="color:Green">Service Available</strong>
+          <v-col> 
+           <strong style="color:Green">Service Available</strong> <!--strong makes the text bold-->
            <p style="color:Green"> Yay! You can register for Bharat Fiber</p> <!--green colour changed so that font readable-->
           </v-col>          
                      

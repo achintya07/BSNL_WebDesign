@@ -49,12 +49,12 @@
     <v-footer class="mx-auto" color="blue darken-3" app> <!-- mx-auto, i.e. margin towards left and right. "Auto" sets the margin size automatically -->
       <v-row dense justify="center">
         <v-col align="center" cols="12" md="12" sm="12"> <!-- footer covers 12 columns on all screens-->
-          <v-btn  text> Home </v-btn>
-          <v-btn  text> Sitemap </v-btn>
-          <v-btn  text> Prepaid</v-btn>
-          <v-btn  text> Postpaid </v-btn>
-          <v-btn  text> Fiber & Wifi </v-btn>
-          <v-btn  text> Customize Number </v-btn>
+          <v-btn  class="text-md-button text-sm-button text-overline" text> Home </v-btn> <!-- text style is "button" on medium and small screens while it is "overline" on extra-small (mobile) screens-->
+          <v-btn  class="text-md-button text-sm-button text-overline" text> Sitemap </v-btn>
+          <v-btn  class="text-md-button text-sm-button text-overline" text> Prepaid</v-btn>
+          <v-btn  class="text-md-button text-sm-button text-overline" text> Postpaid </v-btn>
+          <v-btn  class="text-md-button text-sm-button text-overline" text> Fiber & Wifi </v-btn>
+          <v-btn  class="text-md-button text-sm-button text-overline" text> Customize Number </v-btn> 
         </v-col>
       </v-row>
     </v-footer>

@@ -5,12 +5,14 @@
       <p>{{error}}</p>
     </v-row>
     <v-row justify="end">
-      <v-btn class="mr-4" color="primary" @click="myFunction()">Auto Detect 
+      <v-btn class="mr-4" color="primary" @click="myFunction()">
+        Auto Detect 
       </v-btn> 
     </v-row>
   </div>
 </template>
 <script>
+
    export default {
      data() { 
        return {
@@ -23,12 +25,13 @@
       myFunction: function () {		
         if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(this.showPosition);
-        }else{
+        } else {
         this.error = "Geolocation is not supported."; 
           
         }
       },
-      showPosition:function (position) {	
+      showPosition:function (position) {
+        	
         this.lat = position.coords.latitude;
         this.lon = position.coords.longitude;
       }

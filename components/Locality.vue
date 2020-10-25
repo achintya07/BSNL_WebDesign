@@ -15,7 +15,7 @@
 
       
         <v-row>
-        <v-col cols="7" md="8" sm="8" >
+          <v-col cols="7" md="8" sm="8" >
             <v-card-title class=" font-weight-medium white blue--text mx-2">Enter Locality </v-card-title>
           </v-col>
           
@@ -48,7 +48,8 @@
             <v-btn
         
               color="primary" text
-              @click="toggleAvail " 
+              @click="toggleAvail" 
+              :disabled="isDisabled"
               ><v-icon>mdi-magnify</v-icon>            
             </v-btn>              
           </v-col>                     
@@ -64,6 +65,7 @@
       <!--if condition to show availablity alert when seach/magnify button clicked-->
         <Avail class="mx-1"
             v-if="showAvail"/>
+            
       </v-col>
     </v-row>
   
@@ -72,8 +74,8 @@
 </template>
 
 <script>
-import Avail from './Avail.vue'
-
+  import Avail from './Avail.vue'
+  import NotAvail from './NotAvail.vue'
   export default {
     name: "App",
     components: {
@@ -90,7 +92,7 @@ import Avail from './Avail.vue'
           'Telebhawan,Amravati', 'Savediexch,Amravati', 'MIDC,Amravati', 'Akoli,Amravati',
           'Badnera,Amravati', 'Navsari,Amravati', 'MainExchange,Amravati', 'RLUCAMP,Amravati',
           'Waluj,Amravati', 'Gharkheda,Amravati', 'Chikalthana,Amravati',
-          '-Silkmillcolony,Amravati', 'Cantonment,Amravati', 'Wagholi,Pune', 'Vimannagar,Pune', 'Warje,Pune',
+          'Silkmillcolony,Amravati', 'Cantonment,Amravati', 'Wagholi,Pune', 'Vimannagar,Pune', 'Warje,Pune',
           'Pingalevasti,Pune', 'Bhosari,Pune', 'Baner,Pune', 'Aundh,Pune', 'Athashree,Pune',
           'Balewadi,Pune', 'Hingne,Pune', 'Kondhwa,Pune', 'Saoner tahsil ,Nagpur',
           'Mankapur,Nagpur', 'MIDC,Nagpur', 'IT city,Nagpur', 'Khamla,Nagpur',
@@ -105,18 +107,10 @@ import Avail from './Avail.vue'
       toggleAvail(){
        
         this.showAvail = !this.showAvail
-        
+        this.isDisabled = true;
       },
       
      }
   }
 </script>
-<style>
-@media (max-width: 601px) {
-  .bruh {
-    
-    font-size: 24px;
-  }
-}
-</style>
 

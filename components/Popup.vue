@@ -27,7 +27,7 @@
               </v-col>
               
               <v-col cols="12">
-                <v-text-field label="Contact Number*" required></v-text-field>
+                <v-text-field label="Contact Number*" required></v-text-field>  <!--label attribute acts as a header telling the user what detail needs to be entered-->
               </v-col>
               <v-col cols="12">
                 <v-text-field label="Email"></v-text-field>
@@ -40,8 +40,9 @@
         <v-card-actions>
           
           <v-col align="left">
-          <v-btn color="blue darken-3" light @click="dialog = false">SUBMIT</v-btn>
-          <v-btn color="blue darken-3" text @click="dialog = false">CANCEL</v-btn> </v-col>
+            <v-btn color="blue darken-3" light @click="dialog = false">SUBMIT</v-btn> <!--false makes sure that dialog box does not open when webpage is loaded-->
+            <v-btn color="blue darken-3" text @click="dialog = false">CANCEL</v-btn> 
+          </v-col>
         </v-card-actions>
       </v-card>
     </v-dialog>

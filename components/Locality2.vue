@@ -25,6 +25,7 @@
           
           <v-row align="center" justify="start">
             <v-col cols="9" md="10" sm="10">
+            
               <v-autocomplete
                 v-model="model"
                 dense
@@ -57,8 +58,11 @@
     <v-row justify="center">
       <v-col cols="11" md="10" sm="10">
           <!--if condition to show availablity alert when seach/magnify button clicked-->
-        <NotAvail class="mx-1" 
-        v-if="showNotAvail"/>
+     <v-expand-transition>
+        <NotAvail
+        class="mx-1" 
+         v-if="showNotAvail"/>
+      </v-expand-transition>
       </v-col>
     </v-row>
     <!--need to add if condition to the locality data so that correct availability status is showed -->     
@@ -81,7 +85,7 @@ import NotAvail from './NotAvail.vue'
           'Telebhawan,Amravati', 'Savediexch,Amravati', 'MIDC,Amravati', 'Akoli,Amravati',
           'Badnera,Amravati', 'Navsari,Amravati', 'MainExchange,Amravati', 'RLUCAMP,Amravati',
           'Waluj,Amravati', 'Gharkheda,Amravati', 'Chikalthana,Amravati',
-          '-Silkmillcolony,Amravati', 'Cantonment,Amravati', 'Wagholi,Pune', 'Vimannagar,Pune', 'Warje,Pune',
+          'Silkmillcolony,Amravati', 'Cantonment,Amravati', 'Wagholi,Pune', 'Vimannagar,Pune', 'Warje,Pune',
           'Pingalevasti,Pune', 'Bhosari,Pune', 'Baner,Pune', 'Aundh,Pune', 'Athashree,Pune',
           'Balewadi,Pune', 'Hingne,Pune', 'Kondhwa,Pune', 'Saoner tahsil ,Nagpur',
           'Mankapur,Nagpur', 'MIDC,Nagpur', 'IT city,Nagpur', 'Khamla,Nagpur',

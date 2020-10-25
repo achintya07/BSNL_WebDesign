@@ -1,4 +1,7 @@
 <template>
+<!--search text field-->
+<!--append icon adds magnify icon in textfield-->
+<!--hide-details hides hint or validation errors-->
   <v-text-field
     centered="false"
     hide-details 
@@ -8,7 +11,7 @@
     rounded 
     dense 
     single-line 
-    append-icon="mdi-magnify" class="shrink">
+    append-icon="mdi-magnify">
     
   </v-text-field>    
      

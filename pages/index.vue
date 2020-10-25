@@ -1,17 +1,15 @@
 <template>
   <div>
-
-<tab/>
-<v-row>
-    <Breadcrumb/>
+    <tab/>
+    <v-row>
+      <Breadcrumb/>
     </v-row>
     <v-content>    
     
-    <v-container>
-    <h1 class="heading"> CHECK LOCALITY </h1>
-    
-   </v-container>
-    <Locality/>
+      <v-container>
+        <h1 class="heading"> CHECK LOCALITY </h1>      
+      </v-container>
+      <Status/>
        
     </v-content>
   </div>

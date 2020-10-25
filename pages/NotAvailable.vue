@@ -10,6 +10,7 @@
         <h1 class="heading"> CHECK LOCALITY </h1>
         
       </v-container>
+      
       <Locality2/>
         
     </v-content>

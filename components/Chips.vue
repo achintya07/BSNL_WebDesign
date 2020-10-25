@@ -1,6 +1,6 @@
   <template>
   <div class="text-center">
-   
+    
     <v-chip
       x-small
       class="ma-2"

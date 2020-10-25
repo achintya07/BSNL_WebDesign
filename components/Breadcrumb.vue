@@ -1,7 +1,7 @@
 <template>
   <div>
   <v-col cols="12" md="12" sm="12" >
-    <v-breadcrumbs light :items="items">
+    <v-breadcrumbs light :items="items"> <!--breadcrumbs added for navigation-->
       <template v-slot:divider>
         <v-icon>mdi-chevron-right</v-icon>
       </template>
@@ -16,18 +16,18 @@
       items: [
         {
           text: 'Home',
-          disabled: false,
+          disabled: true,
           href: 'Default',
         },
         {
           text: 'Why Bharat Fiber?',
           disabled: false,
-          href: 'Default',
+          href: 'Fiber',
         },
         {
           text: 'Check Locality',
-          disabled: true,
-          href: 'breadcrumbs_link_1',
+          disabled: false,
+          href: 'test2',
         },
         
       ],
