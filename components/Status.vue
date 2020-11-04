@@ -10,7 +10,7 @@
         class="mx-auto"
         centered="true"
         width="1200px"
-        height="220px"
+       
         >
 
       
@@ -67,12 +67,9 @@
               </v-icon>            
             </v-btn>              
           </v-col>                     
-        </v-row>      
-      </v-card>  
-    </v-container> 
-    
-    <v-row justify="center"> <!--justify is set to center so that Avail component is always on the center of the screen-->
-      <v-col  cols="11" md="10" sm="10">
+        </v-row> 
+        <v-row justify="center"> <!--justify is set to center so that Avail component is always on the center of the screen-->
+      <v-col  cols="11" md="11" sm="11">
       
       <!--expand transition added to show alert (availablity status) -->
       <v-expand-transition>
@@ -81,7 +78,11 @@
         <NotAvail class="mx-1" v-if="showNotAvail"/> <!--if condition added so that when function is performed, then only component will appear-->
       </v-expand-transition>
       </v-col>
-    </v-row>
+    </v-row>     
+      </v-card>  
+    </v-container> 
+    
+    
   
     <!--need to add if condition to the locality data so that correct availability status is showed -->  
   </div>

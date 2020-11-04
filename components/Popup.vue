@@ -3,7 +3,7 @@
   <v-row justify="end"> <!--"receive button aligned towards the end column-->
     <v-dialog light v-model="dialog"  max-width="600px">
       <template v-slot:activator="{ on, attrs }">
-        <v-col align="right">
+        <v-col class="d-none d-sm-flex" offset="7" align="right">
           <v-btn
             color="primary"
             outlined
@@ -11,6 +11,17 @@
             v-on="on"
             >
             Receive Updates
+          </v-btn> 
+        </v-col>
+          <v-col class="d-flex d-sm-none" offset="1" align="right">
+          <v-btn
+            color="primary"
+            outlined
+            v-bind="attrs"
+            v-on="on"
+            >
+            Receive <br>
+            Updates
           </v-btn> 
         </v-col>
       </template>

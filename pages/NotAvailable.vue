@@ -12,7 +12,7 @@
       </v-container>
       
       <Locality2/>
-        
+    
     </v-content>
   </div>
 </template>
